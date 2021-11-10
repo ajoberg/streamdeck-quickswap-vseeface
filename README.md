@@ -16,13 +16,13 @@ Disadvantage is if you use a different face tracking software from VseeFace you 
 
 # What's going on?
 Quick rundown on what is happening when you push the button (you can see this in the pmc file as well):
-- VseeFace application is focused
-- Pause for 200 milliseconds, just in case
-- "L" key is pressed to summon the window where you would choose the file
-- Pause for 1 second, give it a little time to load, just in case
-- Paste the parameter that the application recieved via Stream Deck, the "my-avatar.vrm" part
-- Pause for 200 milliseconds again, just to be sure
-- Send an "Enter" keypress, the model is loaded!
+1. VseeFace application is focused
+2. Pause for 200 milliseconds, just in case
+3. "L" key is pressed to summon the window where you would choose the file
+4. Pause for 1 second, give it a little time to load, just in case
+5. Paste the parameter that the application recieved via Stream Deck, the "my-avatar.vrm" part
+6. Pause for 200 milliseconds again, just to be sure
+7. Send an "Enter" keypress, the model is loaded!
 
 This entire roundtrip should last less than 1 1/2 seconds, you can add as many buttons as you want changing the vrm file.
 Original macro created and exported using Pulover's Macro Creator v5.0.5
